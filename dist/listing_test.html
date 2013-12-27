@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Pozz Search Listing Testing</title>
+    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/jquery.ui.effect.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/test.css">
+    <script>
+        var collapsed = true;
+    //    var height = $('.listing').height();
+        $(document).ready(function() {
+            var pozz_height = $('.panel').height();
+            $('.panel').click(function() {
+                var divLocation = $(this).offset();
+                if($(this).height() == pozz_height) {
+                    var condition_id = "#condition-" + $(this).attr("id");
+                    var text_id = "#text-" + $(this).attr("id");
+                    var new_height = $(condition_id).height() + $(text_id).height();
+                    var description_id = "#description-" + $(this).attr("id");
+                    var new_height = $(description_id).height() + 20;
+          //          $(this).height(new_height + 10);
+//                    $(this).height(new_height + 15);
+                    $(this).animate({height:new_height});
+
+                } else if($(this).height() > pozz_height){
+                    /*  Need to calculate offset for animation */
+                    var offset = parseInt($('.listing-description').css("padding-top")) + parseInt($('.listing').css("padding-top"));
+                    var offset_height = pozz_height + offset;
+                    $(this).animate({height:offset_height});
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div class="div-center">
+    
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default listing" id="1389">
+<!--    <div id="" class="panel-collapse collapse">-->
+        <div class="listing-image">
+            <img src="img/post1_image.png">
+            <em>about an hour ago</em>
+        </div>
+        <div class="listing-description" id="description-1389">
+        <div class="description-condition" id="condition-1389">
+        <p><b>Condition</b>: Brand New</p>
+        <p><b>Brand:</b> Logitech</p>
+        <p><b>Technology:</b> Wireless, Bluetooth</p>
+        </div>
+        <div class="description-text" id="text-1389">A brand new ergonomic logitech keyboard that comes with a red leather casing.  It is a full sized keyboard that could be used on any mobile device. IM me if you are interested!  I am avaible Monday through Friday from 8:00am to 10:00pm EST.  Feel free to add me as a friend!  Also, let me know if you have any question regarding this fantastic product.
+            This is just a for testing purpose.
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdksla;fjdkl;afds</p>
+            <p>fjdkslads</p>
+            
+            
+            </div> 
+        </div>
+        <div class="listing-options">
+            U-District <img src="img/googlemapicon.jpg"> <img src="img/profile_pic.png"><br>
+            <button type="button" class="btn btn-primary">Wish</button>
+            <button type="button" class="btn btn-danger">Chat</button>
+        </div>
+
+<!--    </div>-->
+  </div>
+    
+    <div class="panel panel-default listing" id="1274">
+    <div id="" class="panel-collapse">
+        <div class="listing-image">
+            <img src="img/post1_image.png">
+            <em>about an hour ago</em>
+        </div>
+        <div class="listing-description" id="description-1274">
+        <div class="description-condition" id="condition-1274">
+        <p><b>Condition</b>: Brand New</p>
+        <p><b>Brand:</b> Logitech</p>
+        <p><b>Technology:</b> Wireless, Bluetooth</p>
+        </div>
+        <div class="description-text" id="text-1274">A brand new ergonomic logitech keyboard that comes with a red leather casing.  It is a full sized keyboard that could be used on any mobile device. IM me if you are interested!  I am avaible Monday through Friday from 8:00am to 10:00pm EST.  Feel free to add me as a friend!  Also, let me know if you have any question regarding this fantastic product.
+            This is just a for testing purpose
+            </div> 
+        </div>
+        <div class="listing-options">
+            U-District <img src="img/googlemapicon.jpg"> <img src="img/profile_pic.png"><br>
+            <button type="button" class="btn btn-primary">Wish</button>
+            <button type="button" class="btn btn-danger">Chat</button>
+        </div>
+      </div>
+  </div>
+  </div>
+
+</div>
+</body>
+</html>

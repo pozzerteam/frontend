@@ -1,0 +1,47 @@
+.div-center {
+    width: 850px;
+    position:relative;
+    left: 100px;
+    top:40px;
+}
+
+.listing-image {
+    width:223px;
+/*    height:169px;*/
+/*    height: 100%;*/
+    float:left;
+}
+
+.listing-description {
+    width: 381px;
+/*    height:169px;*/
+    padding-top:2px;
+    float:left;
+    padding-left:16px;
+}
+
+.listing-options {
+    width:174px;
+    padding-left:5px;
+/*    height: 152px;*/
+/*    height: 100%*/
+    float:left;
+}
+
+.listing {
+    height:220px;
+    padding-left:14px;
+    padding-top:14px;
+}
+
+.listing-expand {
+    height:400px;
+}
+
+.description-condition {
+    
+}
+
+.description-text {
+
+}
