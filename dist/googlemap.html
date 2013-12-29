@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Lorem Ipsum - jsFiddle demo</title>
+  <link rel="stylesheet" href="css/test.css">
+  <script src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+
+//]]>  
+
+</script>
+
+
+</head>
+<body>
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <h4 class="modal-title">My Google Map</h4>
+
+            </div>
+            <div class="modal-body"><img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyC-RWs2BNTpLsQSlkgysaVkDKeJDhQhufw&size=400x300&sensor=false&markers=9120+NE+1st+st,+Bellevue+WA+98004"><br>
+                <div class="map-tools">
+                    <div class="map-direction-start">
+                            <input class="map-direction-input" type="text" placeholder="Starting address" id="map-start-adress">
+                    </div>
+                    <button class="map-direction-interchange glyphicon glyphicon-refresh" type="button" id="map-interchange-button"></button>
+                    <div class="map-direction-end">
+                            <input class="map-direction-input" type="text" placeholder="Destination address" id="map-end-address">
+                    </div>
+                </div>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+<!--
+          <div class="modal-dialog">
+            <div class="modal-content map-container">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Google Map Direction</h4>
+              </div>
+              <div class="modal-body">
+               <img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyC-RWs2BNTpLsQSlkgysaVkDKeJDhQhufw&size=400x300&sensor=false&markers=9120+NE+1st+st,+Bellevue+WA+98004"><br>
+                <div class="map-tools">
+                    <div class="map-direction-start">
+                            <input class="map-direction-input" type="text" placeholder="Starting address" id="map-start-adress">
+                    </div>
+                    <button class="map-direction-interchange glyphicon glyphicon-refresh" type="button" id="map-interchange-button" onclick="test()"></button>
+                    <div class="map-direction-end">
+                            <input class="map-direction-input" type="text" placeholder="Destination address" id="map-end-address">
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+-->
+  
+</body>
+
+<script type="text/javascript">
+        $('#map-interchange-button').click(function() {
+           var temp = document.getElementById('map-start-address');
+            alert("shfds");
+        });
+          
+        $('input').change(function() {
+            return($(this).attr('value'));
+        })
+//        $('.map-direction-start').click(function(){
+//           alert("super"); 
+//        });
+  </script>    
+</html>

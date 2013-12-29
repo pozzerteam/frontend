@@ -1,0 +1,345 @@
+<DirectionsResponse>
+<status>OK</status>
+<route>
+<summary>WA-520 E</summary>
+<leg>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6629014</lat>
+<lng>-122.3174121</lng>
+</start_location>
+<end_location>
+<lat>47.6616322</lat>
+<lng>-122.3174549</lng>
+</end_location>
+<polyline>
+<points>cd|aHxbqiVrCBhBB</points>
+</polyline>
+<duration>
+<value>13</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Head <b>south</b> on <b>Roosevelt Way NE</b></html_instructions>
+<distance>
+<value>141</value>
+<text>463 ft</text>
+</distance>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6616322</lat>
+<lng>-122.3174549</lng>
+</start_location>
+<end_location>
+<lat>47.6613758</lat>
+<lng>-122.3228626</lng>
+</end_location>
+<polyline>
+<points>
+e|{aH`cqiVHJFFJFFDD@HHJJ?t@?nAAfA?|@?`B?h@?x@?LIV@dAAZ?`@A|A?V?`@?@?L?V?@?@?H?J?T?@?L?d@?D?@?H?J?BAz@
+</points>
+</polyline>
+<duration>
+<value>66</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Take the 1st <b>right</b> onto <b>NE 45th St</b></html_instructions>
+<distance>
+<value>428</value>
+<text>0.3 mi</text>
+</distance>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6613758</lat>
+<lng>-122.3228626</lng>
+</start_location>
+<end_location>
+<lat>47.6603574</lat>
+<lng>-122.3228979</lng>
+</end_location>
+<polyline>
+<points>sz{aHzdriVP?X@`A@p@Bj@?</points>
+</polyline>
+<duration>
+<value>16</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Turn <b>left</b> onto <b>5th Ave NE</b></html_instructions>
+<distance>
+<value>113</value>
+<text>371 ft</text>
+</distance>
+<maneuver>turn-left</maneuver>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6603574</lat>
+<lng>-122.3228979</lng>
+</start_location>
+<end_location>
+<lat>47.6452721</lat>
+<lng>-122.3230373</lng>
+</end_location>
+<polyline>
+<points>
+gt{aHberiVLEB?DAB?D?D?D?^?tC?~@Av@?^Ad@A\C`@CVCNAPANAB?@?@?@?@A@?@A@A@A@A@AJMNA`@A|AExAGB?XA`@CD?RAj@AFAD?P?D?V?`CAV?`@?dA@xD?x@@`B@n@@F?x@BvBD~BBvABR?x@@p@@rBDH@B?B?b@@tBLXB@@H?@@D?H@VBhCL`@Dh@D\BnBH|AH
+</points>
+</polyline>
+<duration>
+<value>92</value>
+<text>2 mins</text>
+</duration>
+<html_instructions>Take the ramp on the <b>left</b> onto <b>I-5 S</b></html_instructions>
+<distance>
+<value>1683</value>
+<text>1.0 mi</text>
+</distance>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6452721</lat>
+<lng>-122.3230373</lng>
+</start_location>
+<end_location>
+<lat>47.6425920</lat>
+<lng>-122.3190575</lng>
+</end_location>
+<polyline>
+<points>
+}uxaH~eriVJM@ABA@AF?H?P@n@@z@@|DDB?B?V@XC@A@?VGXMJI@CBA@ABATWLS@A@ER_@Ja@Je@BQ?A@C@ODg@?i@?OAAAWGiAOkBEi@?MM}AAYA_A
+</points>
+</polyline>
+<duration>
+<value>30</value>
+<text>1 min</text>
+</duration>
+<html_instructions>
+Take exit <b>168B</b> on the <b>left</b> for <b>Washington 520</b> toward <b>Bellevue/Kirkland</b>
+</html_instructions>
+<distance>
+<value>578</value>
+<text>0.4 mi</text>
+</distance>
+<maneuver>ramp-left</maneuver>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6425920</lat>
+<lng>-122.3190575</lng>
+</start_location>
+<end_location>
+<lat>47.6359685</lat>
+<lng>-122.2309842</lng>
+</end_location>
+<polyline>
+<points>
+eexaHbmqiVSyD?GAECg@Q_DEkAGoACc@?A?A?CE_AKoBE{AEkA?o@CgBC_EA_DCaEAmBEiAEk@Cg@Ek@Gs@Gk@OsAIm@_@sC[uBE[EWQoAMcAMeAe@yDAMAOCQASIsACm@As@?}A?uA?mA?oA?g@Ak@?a@A]AUEs@M}A[gDOkACWCUGm@YsCI_AEm@Ee@Ce@AQ?A?AIeBEoB?mA@sADqBDyATaJJcD@e@FwCD{APoGj@cS\}MNeF@_@@WBa@B[Bg@Fu@De@J}@Jw@L{@P}@N{@Ry@`AgETy@Lg@RcAPiAJm@F_@J{@J_AH_AL}AZeEl@iHfKsoAfIabARmC~Ca`@r@oI^yDd@uDn@uGJw@f@mGt@cKXqDNaBf@wH
+</points>
+</polyline>
+<duration>
+<value>284</value>
+<text>5 mins</text>
+</duration>
+<html_instructions>
+Merge onto <b>WA-520 E</b><div style="font-size:0.9em">Partial toll road</div>
+</html_instructions>
+<distance>
+<value>6753</value>
+<text>4.2 mi</text>
+</distance>
+<maneuver>merge</maneuver>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6359685</lat>
+<lng>-122.2309842</lng>
+</start_location>
+<end_location>
+<lat>47.6355360</lat>
+<lng>-122.2282412</lng>
+</end_location>
+<polyline>
+<points>y{vaHrf`iVFC@A@A?C@CR{ATiBLy@BU@U@Y@Q?U?WAIFcC</points>
+</polyline>
+<duration>
+<value>14</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Take the exit toward <b>84th Ave NE</b></html_instructions>
+<distance>
+<value>215</value>
+<text>0.1 mi</text>
+</distance>
+<maneuver>ramp-right</maneuver>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6355360</lat>
+<lng>-122.2282412</lng>
+</start_location>
+<end_location>
+<lat>47.6210377</lat>
+<lng>-122.2280179</lng>
+</end_location>
+<polyline>
+<points>
+cyvaHnu_iVHSFODEJQLM`B@pAAd@?H@H?j@?xFAl@@z@?LFP?`B?v@A`NBzA@rF@rM?hC?bC@pB@zCDxA@bA?h@@
+</points>
+</polyline>
+<duration>
+<value>124</value>
+<text>2 mins</text>
+</duration>
+<html_instructions>
+Keep <b>right</b> at the fork, follow signs for <b>Medina/Clyde Hill</b> and merge onto <b>84th Ave NE</b>
+</html_instructions>
+<distance>
+<value>1625</value>
+<text>1.0 mi</text>
+</distance>
+<maneuver>fork-right</maneuver>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6210377</lat>
+<lng>-122.2280179</lng>
+</start_location>
+<end_location>
+<lat>47.6210098</lat>
+<lng>-122.2247085</lng>
+</end_location>
+<polyline>
+<points>o~saHbt_iV?M@oA?OA_B@cA?oAAiF?M?G?G@I?G@I@O</points>
+</polyline>
+<duration>
+<value>27</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Turn <b>left</b> onto <b>NE 12th St</b></html_instructions>
+<distance>
+<value>248</value>
+<text>0.2 mi</text>
+</distance>
+<maneuver>turn-left</maneuver>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6210098</lat>
+<lng>-122.2247085</lng>
+</start_location>
+<end_location>
+<lat>47.6192271</lat>
+<lng>-122.2217646</lng>
+</end_location>
+<polyline>
+<points>i~saHl__iVHi@BKBEBKFOLULSzB_Eh@}@h@}@xAoC</points>
+</polyline>
+<duration>
+<value>24</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Continue onto <b>Lake Washington Blvd NE</b></html_instructions>
+<distance>
+<value>298</value>
+<text>0.2 mi</text>
+</distance>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6192271</lat>
+<lng>-122.2217646</lng>
+</start_location>
+<end_location>
+<lat>47.6174769</lat>
+<lng>-122.2188869</lng>
+</end_location>
+<polyline>
+<points>essaH~l~hVhAkBjCwEdB{CJUDMDQDQ@I@K</points>
+</polyline>
+<duration>
+<value>28</value>
+<text>1 min</text>
+</duration>
+<html_instructions>Continue onto <b>NE 1st St</b></html_instructions>
+<distance>
+<value>292</value>
+<text>0.2 mi</text>
+</distance>
+</step>
+<step>
+<travel_mode>DRIVING</travel_mode>
+<start_location>
+<lat>47.6174769</lat>
+<lng>-122.2188869</lng>
+</start_location>
+<end_location>
+<lat>47.6170280</lat>
+<lng>-122.2184263</lng>
+</end_location>
+<polyline>
+<points>ghsaH`{}hVTAD?@?@??A@Av@uA</points>
+</polyline>
+<duration>
+<value>8</value>
+<text>1 min</text>
+</duration>
+<html_instructions>
+Turn <b>right</b> to stay on <b>NE 1st St</b><div style="font-size:0.9em">Destination will be on the left</div>
+</html_instructions>
+<distance>
+<value>64</value>
+<text>210 ft</text>
+</distance>
+<maneuver>turn-right</maneuver>
+</step>
+<duration>
+<value>726</value>
+<text>12 mins</text>
+</duration>
+<distance>
+<value>12438</value>
+<text>7.7 mi</text>
+</distance>
+<start_location>
+<lat>47.6629014</lat>
+<lng>-122.3174121</lng>
+</start_location>
+<end_location>
+<lat>47.6170280</lat>
+<lng>-122.2184263</lng>
+</end_location>
+<start_address>
+4555 Roosevelt Way Northeast, Seattle, WA 98105, USA
+</start_address>
+<end_address>9120 Northeast 1st Street, Bellevue, WA 98004, USA</end_address>
+</leg>
+<copyrights>Map data ©2013 Google</copyrights>
+<overview_polyline>
+<points>
+cd|aHxbqiV|FFPRb@XJJ?t@AvC?bG?LIV?`BAxD?j@A~D~CFj@?LEHAT?lHAdCKhAINCFGJMNA~BGvBIfBGxFC~F@zCBpBDlQXhEVpDRxEX|AHJMDCd@?lHHZ@ZEr@UPOh@o@@ATe@VgAFg@DqAAQ_@wFMkBCyAYoFc@gJ]wIIwNEoHKuBYsDaCsQu@mGQiCEaB?sDAqFIiCi@eGScBo@wGQkC?COuE@aDl@qU`@iPzAgj@L}Bd@qE^yBb@uBvAaG`@kBp@sEpYqmDrEqj@dAoJz@mI|AqSh@sGf@wHFCBC@Gz@uGDwAAa@FcCHSLUX_@bF@|I?z@?LFrB?hZDrYBbJH?yQ@a@PoA\w@|EoItKoRPc@Jc@BUZADCv@uA
+</points>
+</overview_polyline>
+<bounds>
+<southwest>
+<lat>47.6170280</lat>
+<lng>-122.3230373</lng>
+</southwest>
+<northeast>
+<lat>47.6629014</lat>
+<lng>-122.2184263</lng>
+</northeast>
+</bounds>
+</route>
+</DirectionsResponse>

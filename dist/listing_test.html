@@ -1,37 +1,57 @@
 <html>
 <head>
+    <!---   AIzaSyC-RWs2BNTpLsQSlkgysaVkDKeJDhQhufw -->
     <title>Pozz Search Listing Testing</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.ui.effect.js"></script>
     <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
     <script src="js/transition.js"></script>
     <script src="js/collapse.js"></script>
-    <script src="js/jquery.ui.effect.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/utility.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-RWs2BNTpLsQSlkgysaVkDKeJDhQhufw&sensor=false">
+    </script>
+    <script type="text/javascript" src="js/map.js"></script>
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/test.css">
     <script>
-        var collapsed = true;
-    //    var height = $('.listing').height();
+        
+        /** JQuery functions **/
         $(document).ready(function() {
+            
+            //Keep the original div height for restoration purpose 
             var pozz_height = $('.panel').height();
-            $('.panel').click(function() {
-                var divLocation = $(this).offset();
-                if($(this).height() == pozz_height) {
-                    var condition_id = "#condition-" + $(this).attr("id");
-                    var text_id = "#text-" + $(this).attr("id");
-                    var new_height = $(condition_id).height() + $(text_id).height();
-                    var description_id = "#description-" + $(this).attr("id");
-                    var new_height = $(description_id).height() + 20;
-          //          $(this).height(new_height + 10);
-//                    $(this).height(new_height + 15);
-                    $(this).animate({height:new_height});
+            
+            
+            /*  Expand/Collapse for each listing */
+            $('.description-text').click(function() {
+                var id = $(this).attr("id").replace("text-", "");
+                var offset = parseInt($('.listing-description').css("padding-top")) + parseInt($('.listing').css("padding-top"));
+                
+                if($('#' + id).height() == pozz_height) {
+                    
+                    /* Show overflow content if there are any */
+                    $('#overflow-' + id).css("display", "inline");
+                    $('#overflow-placeholder-' + id).html("");
+                    /* Expand listing container's height */
+                    var default_height = $('#description-' + id).height();
+                    var new_height = default_height + offset;
+                    $('#' + id).animate({height:new_height});
 
-                } else if($(this).height() > pozz_height){
-                    /*  Need to calculate offset for animation */
-                    var offset = parseInt($('.listing-description').css("padding-top")) + parseInt($('.listing').css("padding-top"));
+                } else if($('#' + id).height() > pozz_height){  
+                    /* Restore the original listing height */
                     var offset_height = pozz_height + offset;
-                    $(this).animate({height:offset_height});
+                    
+                    /* Perform animation */
+                    $('#' + id).animate({height:offset_height}, function() {
+                        /* Hide overflow content */
+                        $('#overflow-' + id).css("display", "none");
+                        $('#overflow-placeholder-' + id).html("...");
+                    });
+                    
                 }
             });
 
@@ -43,68 +63,127 @@
     
 <div class="panel-group" id="accordion">
   <div class="panel panel-default listing" id="1389">
-<!--    <div id="" class="panel-collapse collapse">-->
         <div class="listing-image">
-            <img src="img/post1_image.png">
+            <div class="image-container">
+                <img src="img/product.jpg" class="product-image" alt="">
+                <p class="product-price">$100 obo</p>
+            </div>
             <em>about an hour ago</em>
         </div>
         <div class="listing-description" id="description-1389">
-        <div class="description-condition" id="condition-1389">
-        <p><b>Condition</b>: Brand New</p>
-        <p><b>Brand:</b> Logitech</p>
-        <p><b>Technology:</b> Wireless, Bluetooth</p>
-        </div>
-        <div class="description-text" id="text-1389">A brand new ergonomic logitech keyboard that comes with a red leather casing.  It is a full sized keyboard that could be used on any mobile device. IM me if you are interested!  I am avaible Monday through Friday from 8:00am to 10:00pm EST.  Feel free to add me as a friend!  Also, let me know if you have any question regarding this fantastic product.
-            This is just a for testing purpose.
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdksla;fjdkl;afds</p>
-            <p>fjdkslads</p>
-            
-            
+            <div class="description-condition" id="condition-1389">
+            <p class="product-header">Brand New Logitech Keyboard</p>
+            <p><b>Condition</b>: Brand New</p>
+            <p><b>Brand:</b> Logitech</p>
+            <p><b>Technology:</b> Wireless, Bluetooth</p>
+            </div>
+            <div class="description-text" id="text-1389">A brand new ergonomic logitech keyboard that comes with a red leather casing.  It is a full sized keyboard that could be used on any mobile device. IM me if you <span class="overflow-placeholder" id="overflow-placeholder-1389">...</span> <span class="overflow-text" id="overflow-1389">are interested!  I am avaible Monday through Friday from 8:00am to 10:00pm EST.  Feel free to add me as a friend!  Also, let me know if you have any question regarding this fantastic product.
+                This is just a for testing purpose.
+                </span>
+                
             </div> 
         </div>
+      <!---------------------Start Map and Profile ------------->
         <div class="listing-options">
-            U-District <img src="img/googlemapicon.jpg"> <img src="img/profile_pic.png"><br>
-            <button type="button" class="btn btn-primary">Wish</button>
-            <button type="button" class="btn btn-danger">Chat</button>
+<!--            U-District <button type="button" class="map-button" id="map-trigger-button"></button>-->
+            U-District <img src="img/googlemapicon.jpg" alt="9120 NE 1st St, Bellevue WA 98004" class="map-trigger">
+            <img src="img/profile_pic.png" id='test-trigger'>
         </div>
+      <!---------------------End Map and Profile ---------->
+      
+       <!----------- option buttons --------------->
+        <div class="option">
+            <div class="option-button"><button type="button" class="btn btn-default option-button-setting">Wish</button></div>
+            <div class="option-button"><button type="button" class="btn btn-danger option-button-setting">Ask</button></div>
+        </div>
+      <!------------- end option buttons ------------>
+    </div>
 
-<!--    </div>-->
   </div>
-    
+    <br>
     <div class="panel panel-default listing" id="1274">
-    <div id="" class="panel-collapse">
         <div class="listing-image">
-            <img src="img/post1_image.png">
+            <img src="img/product.jpg" alt="">
+<!--
+            <h2><span>$100 obo</span></h2>
             <em>about an hour ago</em>
+-->
         </div>
         <div class="listing-description" id="description-1274">
-        <div class="description-condition" id="condition-1274">
-        <p><b>Condition</b>: Brand New</p>
-        <p><b>Brand:</b> Logitech</p>
-        <p><b>Technology:</b> Wireless, Bluetooth</p>
-        </div>
-        <div class="description-text" id="text-1274">A brand new ergonomic logitech keyboard that comes with a red leather casing.  It is a full sized keyboard that could be used on any mobile device. IM me if you are interested!  I am avaible Monday through Friday from 8:00am to 10:00pm EST.  Feel free to add me as a friend!  Also, let me know if you have any question regarding this fantastic product.
-            This is just a for testing purpose
+            <div class="description-condition" id="condition-1274">
+                <p><b>Condition</b>: Brand New</p>
+                <p><b>Brand:</b> Logitech</p>
+                <p><b>Technology:</b> Wireless, Bluetooth</p>
+            </div>
+            <div class="description-text" id="text-1274">A brand new ergonomic logitech keyboard that comes with a red leather casing.  It is a full sized keyboard that could be used on any mobile device. IM me if you are interested!  I am avaible Monday through Friday from 8:00am to 10:00pm EST.  Feel free to add me as a friend!  Also, let me know if you have any question regarding this fantastic product.
+                This is just a for testing purpose.
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdksla;fjdkl;afds</p>
+                <p>fjdkslads</p>
             </div> 
         </div>
         <div class="listing-options">
-            U-District <img src="img/googlemapicon.jpg"> <img src="img/profile_pic.png"><br>
-            <button type="button" class="btn btn-primary">Wish</button>
-            <button type="button" class="btn btn-danger">Chat</button>
+            U-District <img src="img/googlemapicon.jpg" alt="12040 NE 85th Street, Kirkland, WA" class="map-trigger">
+            <img src="img/profile_pic.png">
         </div>
-      </div>
+        <div class="optionbuttons">
+            <div class="wishbutton"><button type="button" class="btn btn-primary">Wish</button></div>
+            <div class="chatbutton"><button type="button" class="btn btn-danger">Chat</button></div>
+        </div>
+    </div>
   </div>
-  </div>
-
+    
+    <!--------------- Start Google Map Overlay ------------------->
+<!-- Modal -->
+<div class="modal fade map container" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+            <div class="modal-content map-container">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Google Map Direction</h4>
+              </div>
+              <div class="modal-body">
+                <div class="map-direction-container">
+                    <div class="map-direction-option">
+                    <a href="#" id="map-address-link">Address</a>
+                    </div>
+                    <div class="map-direction-option">
+                    <a href="#" id="map-direction-link">Directions</a>
+                    </div>
+                </div>
+                <div class="map-container" id="map-canvas">
+                </div>
+                <div class="" id="directions-panel"></div>
+                <div class="map-tool">
+                    <div class="map-direction-start">
+                            <input class="map-direction-input" type="text" placeholder="Starting address" id="map-start-address">
+                    </div>
+<!--                    <input type="button" class="map-direction glyphicon glyphicon-refresh" id="map-interchange-button">-->
+                    <button class="map-direction-interchange glyphicon glyphicon-refresh" type="button" id="map-interchange-button" onclick="addressSwap()"></button>
+                    <div class="map-direction-end">
+                            <input class="map-direction-input" type="text" placeholder="Destination address" id="map-end-address">
+                    </div>
+                    <div class="map-calculate-button">
+                            <button type="button" onclick="calcRoute()">Calculate</button>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="map-close">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
 </div>
+<!-- /.modal -->
+    <!--------------- End Google Map Overlay ------------------->
 </body>
 </html>

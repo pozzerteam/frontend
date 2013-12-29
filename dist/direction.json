@@ -1,0 +1,332 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 47.6629014,
+               "lng" : -122.2184263
+            },
+            "southwest" : {
+               "lat" : 47.617028,
+               "lng" : -122.3230373
+            }
+         },
+         "copyrights" : "Map data ©2013 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "7.7 mi",
+                  "value" : 12438
+               },
+               "duration" : {
+                  "text" : "12 mins",
+                  "value" : 726
+               },
+               "end_address" : "9120 Northeast 1st Street, Bellevue, WA 98004, USA",
+               "end_location" : {
+                  "lat" : 47.617028,
+                  "lng" : -122.2184263
+               },
+               "start_address" : "4555 Roosevelt Way Northeast, Seattle, WA 98105, USA",
+               "start_location" : {
+                  "lat" : 47.6629014,
+                  "lng" : -122.3174121
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "463 ft",
+                        "value" : 141
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : {
+                        "lat" : 47.6616322,
+                        "lng" : -122.3174549
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eRoosevelt Way NE\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "cd|aHxbqiVrCBhBB"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6629014,
+                        "lng" : -122.3174121
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 428
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 66
+                     },
+                     "end_location" : {
+                        "lat" : 47.66137579999999,
+                        "lng" : -122.3228626
+                     },
+                     "html_instructions" : "Take the 1st \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eNE 45th St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "e|{aH`cqiVHJFFJFFDD@HHJJ?t@?nAAfA?|@?`B?h@?x@?LIV@dAAZ?`@A|A?V?`@?@?L?V?@?@?H?J?T?@?L?d@?D?@?H?J?BAz@"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6616322,
+                        "lng" : -122.3174549
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "371 ft",
+                        "value" : 113
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : {
+                        "lat" : 47.6603574,
+                        "lng" : -122.3228979
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e5th Ave NE\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "sz{aHzdriVP?X@`A@p@Bj@?"
+                     },
+                     "start_location" : {
+                        "lat" : 47.66137579999999,
+                        "lng" : -122.3228626
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1683
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 92
+                     },
+                     "end_location" : {
+                        "lat" : 47.6452721,
+                        "lng" : -122.3230373
+                     },
+                     "html_instructions" : "Take the ramp on the \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eI-5 S\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "gt{aHberiVLEB?DAB?D?D?D?^?tC?~@Av@?^Ad@A\\C`@CVCNAPANAB?@?@?@?@A@?@A@A@A@A@AJMNA`@A|AExAGB?XA`@CD?RAj@AFAD?P?D?V?`CAV?`@?dA@xD?x@@`B@n@@F?x@BvBD~BBvABR?x@@p@@rBDH@B?B?b@@tBLXB@@H?@@D?H@VBhCL`@Dh@D\\BnBH|AH"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6603574,
+                        "lng" : -122.3228979
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 578
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 30
+                     },
+                     "end_location" : {
+                        "lat" : 47.642592,
+                        "lng" : -122.3190575
+                     },
+                     "html_instructions" : "Take exit \u003cb\u003e168B\u003c/b\u003e on the \u003cb\u003eleft\u003c/b\u003e for \u003cb\u003eWashington 520\u003c/b\u003e toward \u003cb\u003eBellevue/Kirkland\u003c/b\u003e",
+                     "maneuver" : "ramp-left",
+                     "polyline" : {
+                        "points" : "}uxaH~eriVJM@ABA@AF?H?P@n@@z@@|DDB?B?V@XC@A@?VGXMJI@CBA@ABATWLS@A@ER_@Ja@Je@BQ?A@C@ODg@?i@?OAAAWGiAOkBEi@?MM}AAYA_A"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6452721,
+                        "lng" : -122.3230373
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "4.2 mi",
+                        "value" : 6753
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 284
+                     },
+                     "end_location" : {
+                        "lat" : 47.6359685,
+                        "lng" : -122.2309842
+                     },
+                     "html_instructions" : "Merge onto \u003cb\u003eWA-520 E\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePartial toll road\u003c/div\u003e",
+                     "maneuver" : "merge",
+                     "polyline" : {
+                        "points" : "eexaHbmqiVSyD?GAECg@Q_DEkAGoACc@?A?A?CE_AKoBE{AEkA?o@CgBC_EA_DCaEAmBEiAEk@Cg@Ek@Gs@Gk@OsAIm@_@sC[uBE[EWQoAMcAMeAe@yDAMAOCQASIsACm@As@?}A?uA?mA?oA?g@Ak@?a@A]AUEs@M}A[gDOkACWCUGm@YsCI_AEm@Ee@Ce@AQ?A?AIeBEoB?mA@sADqBDyATaJJcD@e@FwCD{APoGj@cS\\}MNeF@_@@WBa@B[Bg@Fu@De@J}@Jw@L{@P}@N{@Ry@`AgETy@Lg@RcAPiAJm@F_@J{@J_AH_AL}AZeEl@iHfKsoAfIabARmC~Ca`@r@oI^yDd@uDn@uGJw@f@mGt@cKXqDNaBf@wH"
+                     },
+                     "start_location" : {
+                        "lat" : 47.642592,
+                        "lng" : -122.3190575
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 215
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 14
+                     },
+                     "end_location" : {
+                        "lat" : 47.63553599999999,
+                        "lng" : -122.2282412
+                     },
+                     "html_instructions" : "Take the exit toward \u003cb\u003e84th Ave NE\u003c/b\u003e",
+                     "maneuver" : "ramp-right",
+                     "polyline" : {
+                        "points" : "y{vaHrf`iVFC@A@A?C@CR{ATiBLy@BU@U@Y@Q?U?WAIFcC"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6359685,
+                        "lng" : -122.2309842
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1625
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 124
+                     },
+                     "end_location" : {
+                        "lat" : 47.6210377,
+                        "lng" : -122.2280179
+                     },
+                     "html_instructions" : "Keep \u003cb\u003eright\u003c/b\u003e at the fork, follow signs for \u003cb\u003eMedina/Clyde Hill\u003c/b\u003e and merge onto \u003cb\u003e84th Ave NE\u003c/b\u003e",
+                     "maneuver" : "fork-right",
+                     "polyline" : {
+                        "points" : "cyvaHnu_iVHSFODEJQLM`B@pAAd@?H@H?j@?xFAl@@z@?LFP?`B?v@A`NBzA@rF@rM?hC?bC@pB@zCDxA@bA?h@@"
+                     },
+                     "start_location" : {
+                        "lat" : 47.63553599999999,
+                        "lng" : -122.2282412
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 248
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 47.6210098,
+                        "lng" : -122.2247085
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eNE 12th St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o~saHbt_iV?M@oA?OA_B@cA?oAAiF?M?G?G@I?G@I@O"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6210377,
+                        "lng" : -122.2280179
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 298
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : {
+                        "lat" : 47.6192271,
+                        "lng" : -122.2217646
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eLake Washington Blvd NE\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "i~saHl__iVHi@BKBEBKFOLULSzB_Eh@}@h@}@xAoC"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6210098,
+                        "lng" : -122.2247085
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 292
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 28
+                     },
+                     "end_location" : {
+                        "lat" : 47.6174769,
+                        "lng" : -122.2188869
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eNE 1st St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "essaH~l~hVhAkBjCwEdB{CJUDMDQDQ@I@K"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6192271,
+                        "lng" : -122.2217646
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "210 ft",
+                        "value" : 64
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 47.617028,
+                        "lng" : -122.2184263
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003eNE 1st St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ghsaH`{}hVTAD?@?@??A@Av@uA"
+                     },
+                     "start_location" : {
+                        "lat" : 47.6174769,
+                        "lng" : -122.2188869
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "cd|aHxbqiV|FFPRb@XJJ?t@AvC?bG?LIV?`BAxD?j@A~D~CFj@?LEHAT?lHAdCKhAINCFGJMNA~BGvBIfBGxFC~F@zCBpBDlQXhEVpDRxEX|AHJMDCd@?lHHZ@ZEr@UPOh@o@@ATe@VgAFg@DqAAQ_@wFMkBCyAYoFc@gJ]wIIwNEoHKuBYsDaCsQu@mGQiCEaB?sDAqFIiCi@eGScBo@wGQkC?COuE@aDl@qU`@iPzAgj@L}Bd@qE^yBb@uBvAaG`@kBp@sEpYqmDrEqj@dAoJz@mI|AqSh@sGf@wHFCBC@Gz@uGDwAAa@FcCHSLUX_@bF@|I?z@?LFrB?hZDrYBbJH?yQ@a@PoA\\w@|EoItKoRPc@Jc@BUZADCv@uA"
+         },
+         "summary" : "WA-520 E",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
