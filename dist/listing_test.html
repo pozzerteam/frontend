@@ -58,8 +58,9 @@
 </head>
 <body>
 <div class="product-listings">
-    
-    <div class="product-container" id="1389">
+
+<!------------- Start product listing ---------------->
+<div class="product-container" id="1389">
     <div class="">
         <!-- Start image container -->
         <div class="product-media-container">
@@ -79,6 +80,14 @@
                 This is just a for testin purpose.
                 </span>                
             </div> 
+            <div class="product-comment-container">
+                <div class="product-comment-userprofile">
+                    <img src="img/profile_pic.png" id='test-trigger' class="profile-image">
+                </div>
+                <div class="product-comment-input">
+                    <input type="text" class="form-control" placeholder="Ask me a question :)">
+                </div>
+            </div>
         </div>
       <!-- End product information -->
         
@@ -90,18 +99,26 @@
             <!--- End price tag ----->
             
             <!--- Google image icon --->
-            <img src="img/googlemapicon.jpg" alt="9120 NE 1st St, Bellevue WA 98004" class="map-trigger product-option">
+            <div class="product-map-container">
+                    <img src="img/mapicon1.jpeg" alt="9120 NE 1st St, Bellevue WA 98004" class="map-trigger product-option" style="float:left;">
+
+            <a href="">Seattle, WA</a><br>
+            <a href="">U-District</a>
+            </div>
             
             <!---- User profile icon --->
-            <img src="img/profile_pic.png" id='test-trigger' class="product-option">
+<!--            <img src="img/profile_pic.png" id='test-trigger' class="product-option">-->
             
             <!---- Instant Messaging icon ----->
-            <img src="img/chat1.png" class="product-option">
+<!--            <img src="img/chat1.png" class="product-option">-->
             
             <!----- Product posted time ------>
             <p class="product-posted-time product-text"><em>About an hour ago</em></p>
         </div>
     </div>
+</div>
+    
+<!----------- End Product Listing ----------------->
 
  
 
@@ -144,7 +161,6 @@
                 </div>
               </div>
               <div class="modal-footer map-footer">
-                  <br>
                 <button type="button" class="btn btn-default" id="map-close">Close</button>
 <!--                <button type="button" class="btn btn-primary">Save changes</button>-->
               </div>
