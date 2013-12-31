@@ -101,28 +101,6 @@ h2 {
 .image-container {
     height:173px;
     width:227px;
-    position: relative;
-/*
-    border-style:solid;
-    border-width:1px;
-*/
-}
-.product-price {
-    padding-left:5px;
-    padding-right:5px;
-    
-    z-index:100;
-    position:absolute;
-    color:white;
-    font-size:18px;
-    font-weight:bold;
-    left:0px;
-    top:146px;
-    background-color: #000;
-    filter:alpha(opacity=50);
-    -moz-opacity:0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
 }
 
 .product-header {
@@ -168,8 +146,10 @@ h2 {
 }
 
 .map-direction-interchange {
+/*
     width:30px;
     height:30px;
+*/
     float:left;
 }
 
@@ -240,7 +220,15 @@ h2 {
 }
 
 .map-container {
-    width:750;
-    height:700;
-    overflow:hidden;
+    width:100%;
+    height:700px;
+    overflow-y:hidden;
+}
+
+.map-dialog-box {
+    width: 815px;
+}
+
+.map-footer {
+    padding-top:30px;
 }
